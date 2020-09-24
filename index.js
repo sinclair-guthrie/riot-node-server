@@ -28,7 +28,6 @@ app.get('/request/:summName', (req, res) => {
                         promArr.push(apiCalls.matchData(x.gameId)
                             .then(data => {
                                 let ans = algo.matchVal(data, privateUid);
-                                console.log(data.gameId);
                                 return ans;
                             })
                             .catch(err => {

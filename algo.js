@@ -18,9 +18,10 @@ current return values:
 -Perfect KDA
 -Enemy perfect KDA
 */
+/*
 const testJson = require("./test2.json")
 
-let testID = "DaZCHy8A89R2k7KxdvZlj-Zu3jX2rkotppjzLYmdAVRi0kI"
+let testID = "DaZCHy8A89R2k7KxdvZlj-Zu3jX2rkotppjzLYmdAVRi0kI" */
 
 const matchVal = function(data, privateUid) {
     if (data.gameDuration < 240) {
@@ -57,7 +58,5 @@ const matchVal = function(data, privateUid) {
     if (diff === -Infinity) return "Enemy perfect KDA"
     return (diff);
 }
-
-console.log(matchVal(testJson, testID));
 
 exports.matchVal = matchVal;
