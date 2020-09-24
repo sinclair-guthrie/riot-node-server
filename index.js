@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 3001
 const apiCalls = require('./api-calls.js');
 const algo = require('./algo.js');
 require('dotenv').config();
@@ -59,4 +60,4 @@ app.get('/request/:summName', (req, res) => {
         })
 })
 
-app.listen(3001);
+app.listen(PORT);
