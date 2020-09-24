@@ -1,0 +1,38 @@
+{
+    "matches": [
+        {
+            "platformId": "NA1",
+            "gameId": 3561463087,
+            "champion": 98,
+            "queue": 420,
+            "season": 13,
+            "timestamp": 1599189138181,
+            "role": "SOLO",
+            "lane": "TOP"
+        },
+        {
+            "platformId": "NA1",
+            "gameId": 3561454634,
+            "champion": 98,
+            "queue": 420,
+            "season": 13,
+            "timestamp": 1599187121875,
+            "role": "SOLO",
+            "lane": "TOP"
+        },
+        {
+            "platformId": "NA1",
+            "gameId": 3541533512,
+            "champion": 69,
+            "queue": 400,
+            "season": 13,
+            "timestamp": 1597890894729,
+            "role": "SOLO",
+            "lane": "TOP"
+        }
+        
+    ],
+    "startIndex": 0,
+    "endIndex": 10,
+    "totalGames": 179
+}
