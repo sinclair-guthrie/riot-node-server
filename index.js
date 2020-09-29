@@ -11,6 +11,7 @@ app.get('/request/:summName', (req, res) => {
     apiCalls.summFetch(req.params.summName)
         .then(data => {
             if (data.status === 403) {
+                console.log("success");
                 res.set("Access-Control-Allow-Origin", "*");
                 res.status(403).send("Forbidden");
                 return;
@@ -18,7 +19,7 @@ app.get('/request/:summName', (req, res) => {
             privateUid = data.accountId;
             if (privateUid === undefined) {
                 res.set("Access-Control-Allow-Origin", "*");
-                res.status(404).send("Summoner not found");
+                res.status(data.status.status_code).send(data.status.message);
                 return;
             }
             return apiCalls.matchHist(privateUid, 10)
