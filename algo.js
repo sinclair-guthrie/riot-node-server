@@ -63,7 +63,7 @@ const matchVal = function(data, privateUid) {
         return "Can't parse the data - someone likely roamed a bunch";
     }
 
-    // calculating KDAs for summoner and their lane opponent to be set on response object
+    // calculating KDAs for summoner and their lane opponent to be set on response
     let partKDA = (partInfo.stats.kills + partInfo.stats.assists) / partInfo.stats.deaths;
     let enemyKDA = (enemyInfo.stats.kills + enemyInfo.stats.assists) / enemyInfo.stats.deaths;
     if (partKDA === Infinity && enemyKDA === Infinity) return "Both perfect KDA"; // testing if both kda's are perfect
